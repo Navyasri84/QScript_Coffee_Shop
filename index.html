@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop</title>
+  <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!-- --------nav starts-------- -->
+  <nav>
+    <a href="#" class="icon" onclick="toggleNav()"><i class="fas fa-bars"></i></a>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+
+  <!-- -------nav ends--------- -->
+
+  <div class="container">
+
+    <!-- -----home section starts ------ -->
+
+    <section id="home">
+      <div class="hero">
+        <div class="main-content">
+          <h1>Welcome to QScript Coffee</h1>
+          <h3>Start Your Day with a Coffee</h3>
+          <h4>Experience the finest specialty coffee and pastries in town.</h4>
+          <div class="button">
+            <a href="#contact" class="btn">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----home section ends ------ -->
+
+    <!-- -----about section starts ------ -->
+
+    <section id="about">
+      <div class="content">
+        <div class="about-content main-content">
+          <h2>About Us</h2>
+          <p>At QScript Coffee, we are passionate about serving you the best coffee and pastries made with love
+            and care. Our mission is to provide a cozy and welcoming atmosphere where you can relax and enjoy
+            your favorite treats.</p>
+          <div class="button">
+            <a href="#menu" class="btn">For Menu</a>
+          </div>
+
+        </div>
+
+        <img src="Images/about-img.png" alt="">
+      </div>
+    </section>
+
+    <!-- -----about section ends ------ -->
+
+    <!-- -----menu section starts ------ -->
+
+    <section id="menu">
+      <div class="content">
+        <h2>Our Popular Coffee</h2>
+
+        <div class="menu-items">
+          <div class="menu-item">
+            <h3>Espresso</h3>
+            <img src="Images/menu-item1.jpeg" alt="">
+            <p>Strong and intense, the essence of pure coffee in a single shot.</p>
+            <h4>Cost: ₹80</h4>
+            <div class="button">
+              <a href="#" class="btn" onclick="orderNow()">Order Now</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <h3>Cappuccino</h3>
+            <img src="Images/menu-item2.jpg" alt="">
+            <p>A classic Italian delight, with rich espresso, frothy milk, and a sprinkle of cocoa.</p>
+            <h4>Cost: ₹100</h4>
+            <div class="button">
+              <a href="#" class="btn" onclick="orderNow()">Order Now</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <h3>Latte</h3>
+            <img src="Images/menu-item3.jpg" alt="">
+            <p>Silky smooth and creamy, the perfect balance of espresso and steamed milk.</p>
+            <h4>Cost: ₹120</h4>
+            <div class="button">
+              <a href="#" class="btn" onclick="orderNow()">Order Now</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <h3>Croissant</h3>
+            <img src="Images/menu-item4.jpg" alt="">
+            <p>Buttery and flaky, the ideal companion to your morning coffee.</p>
+            <h4>Cost: ₹60</h4>
+            <div class="button">
+              <a href="#" class="btn" onclick="orderNow()">Order Now</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <h3>Filter Coffee</h3>
+            <img src="Images/menu-item5.jpeg" alt="">
+            <p>A South Indian favorite, bold and aromatic with a hint of chicory.</p>
+            <h4>Cost: ₹70</h4>
+            <div class="button">
+              <a href="#" class="btn" onclick="orderNow()">Order Now</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <h3>Instant Coffee</h3>
+            <img src="Images/menu-item6.jpeg" alt="">
+            <p>Instant gratification, a quick and easy caffeine fix on the go.</p>
+            <h4>Cost: ₹50</h4>
+            <div class="button">
+              <a href="#" class="btn" onclick="orderNow()">Order Now</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <h3>Cold Coffee</h3>
+            <img src="Images/menu-item7.jpeg" alt="">
+            <p>Cool and refreshing, a blend of chilled coffee, milk, and sweetness over ice.</p>
+            <h4>Cost: ₹90</h4>
+            <div class="button">
+              <a href="#" class="btn" onclick="orderNow()">Order Now</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <h3>Masala Chai Latte</h3>
+            <img src="Images/menu-item8.jpg" alt="">
+            <p> Spiced to perfection, a comforting blend of black tea, spices, and milk. </p>
+            <h4>Cost: ₹110</h4>
+            <div class="button">
+              <a href="#" class="btn" onclick="orderNow()">Order Now</a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <h3>Turmeric Latte</h3>
+            <img src="Images/menu-item9.jpeg" alt="">
+            <p>Golden and warming, a cozy concoction of turmeric, spices, and steamed milk.</p>
+            <h4>Cost: ₹100</h4>
+            <div class="button">
+              <a href="#" class="btn" onclick="orderNow()">Order Now</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -----menu section ends ------ -->
+
+    <!-- -----contact section starts ------ -->
+
+    <section id="contact">
+      <div class="content">
+        <div class="contact-form">
+          <h2>Contact Us</h2>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+
+        <div class="google-map">
+          <h2>Our Location</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="icons" id="contact">
+        <a href="" class="phone"><abbr title="+91 98765 43210"><i class="fa-solid fa-phone"></i></abbr></a>
+        <a href="mailto:qscriptcoffee@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://facebook.com/qscriptcoffee" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/qscriptcoffee" target="_blank"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="https://twitter.com/qscriptcoffee" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+
+      <div class="qlinks" id="contact">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+    </footer>
+
+
+    <!-- -----contact section ends ------ -->
+
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

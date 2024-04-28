@@ -1,0 +1,396 @@
+:root {
+    --brown: rgb(84, 39, 39);
+    --light-brown: rgb(105, 63, 63);
+    --button: rgb(86, 20, 45);
+    --creameclr: rgb(235, 184, 127);
+}
+
+* {
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*------------ nav starts ------------*/
+
+nav {
+    background-color: var(--brown);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--light-brown);
+}
+
+.icon {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/*---------- nav ends ----------*/
+
+/* -----home section starts -------- */
+
+.container {
+    width: 100%;
+}
+
+.container #home {
+    background: url(Images/menu-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container #home .hero {
+    width: 100%;
+    height: 99vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container #home .hero .main-content {
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px #000;
+}
+
+.container #home .hero .main-content h1 {
+    font-size: 300%;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 13px 20px;
+    background-color: var(--button);
+    color: white;
+    text-shadow: none;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.button {
+    margin-top: 25px;
+}
+
+.btn:hover {
+    background-color: var(--creameclr);
+    color: var(--brown);
+}
+
+/* -----home section ends -------- */
+
+/* -----about section starts -------- */
+
+.container #about {
+    width: 90%;
+    margin: auto;
+}
+
+.container #about .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    color: var(--button);
+}
+
+.container #about .content .about-content {
+    margin-right: 30px;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+.container #about .content img {
+    width: 50%;
+}
+
+/* -----about section ends -------- */
+
+
+/* -----menu section starts -------- */
+
+.container #menu {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.container #menu .content .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container #menu .content {
+    color: var(--button);
+}
+
+.container .menu-item {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+    padding-bottom: 30px;
+}
+
+.container .menu-item img {
+    width: 80%;
+    border: 1px solid var(--creameclr);
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 20px;
+}
+
+.container .menu-item img:hover {
+    border: 1px solid var(--button);
+}
+
+.container .menu-item p {
+    width: 85%;
+    margin: auto;
+}
+
+/* -----menu section ends -------- */
+
+/* -----contact section starts -------- */
+
+.container #contact .content {
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--button);
+  }
+  
+  .container #contact .content .contact-form {
+    width: 45%;
+  }
+  
+  .container #contact .content .google-map {
+    width: 45%; 
+  }
+  
+  .container #contact .content .google-map iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+}
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--light-brown);
+}
+
+#contact button{
+    margin-top: 0px;
+    font-size: 16px;
+    border: none;
+}
+
+
+footer {
+    background-color: var(--brown);
+    padding: 30px;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    width: 50%;
+}
+
+.icons a {
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+    margin: 2px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.icons a:hover {
+    padding: 7px;
+    margin: 0;
+}
+
+.tooltiptext {
+    visibility: hidden;
+}
+
+.tooltiptext:hover {
+    visibility: visible;
+}
+
+.qlinks {
+    width: 50%;
+}
+
+.qlinks a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.qlinks a:hover {
+    background-color: var(--light-brown);
+}
+/* -----contact section ends -------- */
+
+@media screen and (max-width: 900px) {
+    .container .menu-item {
+        width: calc(50% - 20px);
+    }
+
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    .container #about .content {
+        margin: 0px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .container #about .content {
+        display: block;
+        text-align: center;
+        height: auto;
+    }
+
+    .container #about .content .about-content {
+        margin-right: auto;
+    }
+
+    .container #about .content img {
+        width: 80%;
+    }
+
+    .container .menu-item {
+        width: calc(100% - 20px);
+    }
+
+    form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .container #contact .content {
+        display: block;
+        margin: auto;
+      }
+
+    .container #contact .content .contact-form {
+        width: 100%;
+      }
+      
+      .container #contact .content .google-map {
+        width: 100%; 
+      }
+
+      #contact h2{
+        text-align: center;
+      }
+
+    footer {
+        display: flex;
+        flex-direction: column
+    }
+
+    .icons {
+        width: 100%;
+    }
+
+    .qlinks {
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    nav a:not(:first-child) {
+        display: none;
+    }
+
+    nav a.icon {
+        float: right;
+        display: block;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .container #about {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .container #about .content img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    nav.responsive {
+        position: relative;
+    }
+
+    nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
